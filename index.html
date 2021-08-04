@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Operation</title>
+    <script src="https://kit.fontawesome.com/2e0b3280bb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <br><br><br><br>
+
+    <!-- Table -->
+    <table>
+        <tr>
+            <th class="addUser">
+                <class class="fas fa-plus"></class> <span
+                    onclick="document.getElementById('userModal').style.display='block'"> Add User</span>
+            </th>
+        </tr>
+        <tr>
+            <th>S.no</th>
+            <th>User Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Update</th>
+            <th>Remove</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Ramji</td>
+            <td>crramji004@gmail.com</td>
+            <td>9626648665</td>
+            <td><i class="fas fa-user-edit"></i></td>
+            <td><i class="fas fa-trash"></i></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>shan</td>
+            <td>Shanleo@gmail.com</td>
+            <td>9442831374</td>
+            <td><i class="fas fa-user-edit"></i></td>
+            <td><i class="fas fa-trash"></i></td>
+        </tr>
+    </table>
+
+    <!-- user Model -->
+
+    <div id="userModal">
+        <form class="userContent" action="">
+            <div class="avatarCont">
+                <span onclick="document.getElementById('userModal').style.display='none'" class="close">&times;</span>
+                <img src="images/avathar.png" alt="avathar" class="avathar">
+            </div>
+
+            <div class="userData">
+                <label for="userName">User Name</label>
+                <input type="text" placeholder="Enter your name" name="userName" required>
+
+                <label for="email">Email</label>
+                <input type="text" placeholder="Enter your Email" name="email" required>
+
+                <label for="phone">Phone</label>
+                <input type="text" placeholder="Enter your Email" name="phone" required>
+                <br><br>
+                <button type="submit">Submit</button>
+                <br><br>
+                <button class="cansel"
+                    onclick="document.getElementById('userModal').style.display='none'">Cansel</button>
+
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
